@@ -1,3 +1,11 @@
 /* Paleta de cores: */
 /* logo dark: #0B0D36 */
 /* logo light: #A6A5A3 */
+
+header a {
+
+    text-align: center;
+    margin-bottom: 0;
+    display: block;
+    padding: 0%;
+}
