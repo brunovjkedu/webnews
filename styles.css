@@ -9,3 +9,157 @@ header a {
     display: block;
     padding: 0%;
 }
+ 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1300px;
+    
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+
+.noticias-destaque {
+    display: flex;
+    width: 100%;
+}
+
+.noticia-principal {
+    width: 60%;
+    padding-top: 20%;
+    background-color: #222;
+    position: relative;
+    border: 2px solid white;
+    position: relative;
+    
+
+}
+
+.noticia-destaque-single {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.noticia-destaque-single h3 {
+    padding: 5px;
+    color: white;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: small;
+    
+}
+
+.outras-noticias {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap; /* se n houver espaço cair */
+    border: 5px solid white
+}
+
+.noticia-single {
+    width: 50%; /*pois são quatro noticias*/
+    padding-top: 30%;
+    background-color: #222;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white
+    
+}
+
+.noticia-single h3 {
+    padding: 4px;
+    color: white;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    text-decoration: none;
+    
+}
+
+a {
+    color: white;
+}
+
+/* Media Query para telas menores (smartphones e tablets em modo retrato) */
+@media (max-width: 768px) {
+    /* Altera a direção do layout das notícias em destaque para empilhar verticalmente */
+    .noticias-destaque {
+        flex-direction: column;
+    }
+
+    /* A notícia principal ocupa 100% da largura em telas menores */
+    .noticia-principal {
+        width: 100%;
+        /* Ajuste o padding-top se a proporção vertical ficar muito grande */
+        padding-top: 65%; /* Exemplo para proporção 16:9, pode ajustar */
+    }
+
+    /* A seção de outras notícias também ocupa 100% da largura */
+    .outras-noticias {
+        width: 100%;
+        /* Não precisa de flex-direction: column aqui porque as "noticia-single" já terão 100% de largura e quebrarão a linha */
+    }
+
+    /* Cada notícia individual ocupa 100% da largura em telas menores */
+    .noticia-single {
+        width: 100%;
+        /* Ajuste o padding-top para uma proporção melhor em 100% de largura */
+        padding-top: 65%; /* Exemplo, pode ajustar conforme a imagem */
+    }
+
+    /* Ajusta o tamanho da fonte dos títulos das notícias para melhor legibilidade em telas menores */
+    .noticia-destaque-single h3 {
+        font-size: 16px; /* Um pouco maior para destaque */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        line-height: 1.2; /* Ajuste o espaçamento entre linhas */
+    }
+
+    .noticia-single h3 {
+        font-size: 16px; /* Tamanho da fonte padrão para notícias menores */
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        line-height: 1.2;
+    }
+}
+
+.imagem-center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+}
+
+div h2 {
+    font-size: medium;
+}
+
+.tamanho {
+    font-size: medium;
+    
+}
+
