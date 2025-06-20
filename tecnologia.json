@@ -1,0 +1,42 @@
+[
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "Novidade no mercado tech!",
+    "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus vel orci convallis hendrerit.\n\nPraesent eget mauris nec velit laoreet laoreet. Vestibulum dignissim mauris id justo malesuada, et tempor odio dapibus."
+  },
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "Aplicativos do futuro",
+    "texto": "Curabitur ac velit sed urna consequat fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.\n\nVivamus facilisis, lorem a ultricies porta, lectus sapien fermentum sapien, nec tincidunt justo ex nec urna."
+  },
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "Inteligência Artificial em alta",
+    "texto": "Mauris faucibus dolor in vehicula suscipit. Nullam lacinia lacus in nulla fermentum congue.\n\nDonec ultrices, nibh vitae fringilla eleifend, justo purus cursus velit, sed tincidunt sem erat in tellus."
+  },
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "Startups brasileiras brilham",
+    "texto": "Suspendisse potenti. Cras in justo eu sem sodales ultrices. Pellentesque euismod lacus nec lectus tristique, id facilisis urna tincidunt.\n\nFusce luctus magna a nibh commodo rhoncus. Donec nec lorem quis velit fermentum malesuada."
+  },
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "5G chega com força",
+    "texto": "In sit amet mauris vel nisi suscipit ultricies at ac erat. Sed vestibulum efficitur tortor, vel euismod elit luctus ac.\n\nInteger lacinia dui at urna rutrum volutpat. Sed euismod massa eu ante luctus, non facilisis lacus aliquam."
+  },
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "Mercado gamer em expansão",
+    "texto": "Donec tristique nisi at nibh eleifend, in viverra arcu ullamcorper. Pellentesque lobortis lorem vitae sodales gravida.\n\nEtiam nec libero vitae neque feugiat scelerisque ac non lorem."
+  },
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "Sustentabilidade digital",
+    "texto": "Phasellus nec ligula sed metus iaculis tincidunt non at sem. Nam non justo ac mauris efficitur fermentum.\n\nAenean suscipit lectus et neque suscipit, id sagittis eros gravida."
+  },
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "O futuro do trabalho remoto",
+    "texto": "Vestibulum feugiat sem nec nisl posuere, a pretium magna tempor. Integer at risus arcu.\n\nAliquam ac nulla at metus pretium iaculis. Suspendisse nec tincidunt justo."
+  }
+]
