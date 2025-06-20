@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="bg-light">
     <!-- Header -->
-    <header>
+    <header class="bg-white">
         <a href="index.html">
             <img src="logo/logo webnews.jpeg" height="100" alt="logo WebNews" loading="lazy" />
         </a>
@@ -68,9 +68,12 @@
                     container.innerHTML = `
                   <div class="row justify-content-center">
                         <div class="col-lg-10">
-                            <h1 class="mb-4">${noticia.titulo}</h1>
-                            <img src="${noticia.imagem}" class="img-fluid w-100 mb-4" alt="Imagem da notícia" style="object-fit: cover; max-height: 400px;">
-                            <div class="lead text-justify">${noticia.texto.replace(/\n\n/g, '</div><div class="lead text-justify">')}</div>
+                            <h1 class="mb-4">${noticia.titulo}</h1>  
+                            <figure class="mb-4">
+                                <img src="${noticia.imagem}" class="img-fluid w-100" alt="${noticia.alt}" style="object-fit: cover; max-height: 400px;">
+                                <figcaption class="small text-muted mt-2">${noticia.alt}</figcaption>
+                            </figure>                     
+                            <div class="lead text-justify py-5">${noticia.texto.replace(/\n\n/g, '</div><div class="lead text-justify">')}</div>
                         </div>
                     </div>  
                     `;
