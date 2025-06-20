@@ -58,7 +58,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             const postIndex = parseInt(urlParams.get('id'), 10);
 
-            fetch('tecnologia.json')
+            fetch('tecnologia-noticias.json')
                 .then(res => res.json())
                 .then(data => {
                     const noticia = data[postIndex];
