@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="bg-light">
     <!-- Header -->
-    <header>
+    <header class="bg-white">
         <a href="index.html">
             <img src="logo/logo webnews.jpeg" height="100" alt="logo WebNews" loading="lazy" />
         </a>
@@ -38,55 +38,93 @@
     <!-- Main -->
     <main class="container">
         <!-- Destaques -->
-        <div class="row">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 py-5">
 
-            <div class="col-12 col-md-8 col-lg-6 p-4 pb-0">
-                <div class="d-flex flex-column">
-                    <img src="imagens/tecnologia_01.jpg" alt="Foto generica referente a tecnologia."
-                        class="figure-img img-fluid rounded object-fit-cover" />
-                    <h1>'Êta Mundo Melhor!': as primeiras cenas de Lari Manoela como enfermeira com segredo</h1>
-                    <p class="lead">
-                        Ninguém acerta dezenas, e prêmio da Mega-Sena acumula em R$ 130 milhões; veja números
-                    </p>
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card h-100 border-0 shadow" data-destaque-id="0" style="cursor: pointer;">
+                    <div class="card-body d-flex flex-column">
+                        <h1 class="card-title">Drake afirma ter perdido mais de US$ 8 milhões em apostas esportivas</h5>
+                            <p class="card-text text-truncate-5">
+                                O rapper canadense Drake afirmou ter perdido mais de US$ 8 milhões (o equivalente a R$
+                                44,4 milhões) em apostas esportivas apenas no último mês. A informação foi divulgada
+                                pelo próprio artista em suas redes sociais. Ele compartilhou uma captura de tela com os
+                                valores apostados e lamentou: 'As perdas estão tão ruins agora'. Drake mostrou que
+                                apostou mais de US$ 124 milhões no período, sendo US$ 50 milhões apenas na última semana
+                                e US$ 75 milhões no início deste mês. As perdas totalizaram US$ 8,2 milhões.
+                            </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="d-none d-md-block col-md-4 col-lg-3 p-4 pb-0">
-                <div class="d-flex flex-column h-100">
-                    <img src="imagens/tecnologia_01.jpg" alt="Foto generica referente a tecnologia."
-                        class="figure-img img-fluid rounded object-fit-cover h-100" />
-                    <h1 class="h2">Conta de luz, impostos e mais: os 12 vetos de Lula que Congresso derrubou</h1>
+            <div class="d-none d-md-block col-md-4 col-lg-3 pt-3">
+                <div class="card h-100 border-0 shadow" data-destaque-id="1" style="cursor: pointer;">
+                    <img src="imagens/tecnologia_02.jpg" class="card-img-top"
+                        alt="Foto generica referente a tecnologia.">
+                    <div class="card-body">
+                        <h5 class="card-title">Até R$ 33 mil: o que têm (e não têm) os celulares mais caros do Brasil
+                        </h5>
+                    </div>
                 </div>
             </div>
 
-            <div class="d-none d-lg-block col-lg-3 p-4 pb-0">
-                <div class=" d-flex flex-column h-100">
-                <img src="imagens/tecnologia_01.jpg" alt="Foto generica referente a tecnologia."
-                    class="figure-img img-fluid rounded object-fit-cover h-100" />
-                <h1 class="h2">River faz jogo seguro, se impõe contra Urawa Reds e inicia Copa com vitória</h1>
+            <div class="d-none d-lg-block col-lg-3 pt-3">
+                <div class="card h-100 border-0 shadow" data-destaque-id="2" style="cursor: pointer;">
+                    <img src="imagens/tecnologia_03.jpg" class="card-img-top"
+                        alt="Foto generica referente a tecnologia.">
+                    <div class="card-body">
+                        <h5 class="card-title">Dono do Telegram diz que vai deixar herança para seus mais de 100 filhos
+                        </h5>
+                    </div>
+                </div>
             </div>
-        </div>
-
         </div>
 
         <!-- Anuncio -->
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">Anuncio 1</div>
-            <div class="d-none d-md-block col-md-6 col-lg-4">Anuncio 2</div>
-            <div class="d-none d-lg-block col-lg-4">Anuncio 3</div>
+        <div class="row g-5 py-2">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="https://www.uffs.edu.br/uffs/notcias/agricultura-orgnica-tema-de-destaque-em-aes-e-projetos-institucionais"
+                    class="text-decoration-none text-dark" target="_blank">
+                    <div class="card flex-row align-items-center p-2" style="min-height: 100px; cursor: pointer;">
+                        <div class="ps-3">
+                            <h5 class="mb-1">Agricultura orgânica é tema de destaque em ações e projetos institucionais
+                            </h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="d-none d-lg-block col-lg-4">
+                <a href="https://www.uffs.edu.br/uffs/graduacao/ingresso-na-graduacao"
+                    class="text-decoration-none text-dark" target="_blank">
+                    <div class="card flex-row align-items-center p-2" style="min-height: 100px;">
+                        <!-- <img src="imagens/tecnologia_01.jpg" alt="Anuncio 3"
+                        style="width: 100px; height: auto; object-fit: cover;"> -->
+                        <div class="ps-3">
+                            <h5 class="mb-1">Estude na UFFS</h5>
+                            <small>Se você quer fazer uma graduação gratuita, de qualidade, a UFFS é o seu
+                                lugar!</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="d-none d-md-block col-md-6 col-lg-4">
+                <a href="https://cc.uffs.edu.br/noticias/2024/09/04/maratona-regional-2024/"
+                    class="text-decoration-none text-dark" target="_blank">
+                    <div class="card flex-row align-items-center p-2" style="min-height: 100px; cursor: pointer;">
+                        <div class="ps-3">
+                            <h5 class="mb-1">UFFS classifica para a Final Nacional da Maratona de
+                                Programação</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
 
         <!-- Noticias -->
-        <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">Notícias 1</div>
-            <div class="col-12 col-md-4 col-lg-3">Notícias 2</div>
-            <div class="col-12 col-md-4 col-lg-3">Notícias 3</div>
-            <div class="col-12 col-md-4 col-lg-3">Notícias 4</div>
-            <div class="col-12 col-md-4 col-lg-3">Notícias 5</div>
-            <div class="col-12 col-md-4 col-lg-3">Notícias 6</div>
-            <div class="col-12 col-md-4 col-lg-3">Notícias 7</div>
-            <div class="col-12 col-md-4 col-lg-3">Notícias 8</div>
-        </div>
+        <div class="row row g-5 py-5" id="noticias-container"></div>
     </main>
 
     <!-- Footer -->
@@ -102,6 +140,43 @@
             '[data-bs-toggle="tooltip"]'
         );
         tooltipTriggerList.forEach((el) => new bootstrap.Tooltip(el));
+
+        // Aplicar links nos cards de destaque
+        const destaqueCards = document.querySelectorAll('[data-destaque-id]');
+        destaqueCards.forEach(card => {
+            const id = card.getAttribute('data-destaque-id');
+            card.addEventListener('click', () => {
+                window.location.href = `tecnologia-post.html?id=${id}`;
+            });
+        });
+
+        // Consumir arquivo de noticias
+        fetch('tecnologia-noticias.json')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('noticias-container');
+                if (!container) return;
+                container.innerHTML = '';
+
+                data.slice(3).forEach((noticia, index) => {
+                    const globalIndex = index + 3;
+                    const col = document.createElement('div');
+                    col.className = 'col-12 col-md-4 col-lg-3';
+                    col.innerHTML = `
+                <a href="tecnologia-post.html?id=${globalIndex}" class="text-decoration-none text-dark">
+                    <div class="card h-100 border-0 shadow">
+                        <img src="${noticia.imagem}" class="card-img-top" alt="${noticia.alt}" style="object-fit: cover; height: 200px;">
+                        <div class="card-body">
+                            <h6 class="card-title text-truncate-2">${noticia.titulo}</h6>
+                            <p class="card-text text-truncate-3">${noticia.texto || ''}</p>
+                        </div>
+                    </div>
+                </a>
+            `;
+                    container.appendChild(col);
+                });
+            })
+            .catch(error => console.error('Erro ao carregar o JSON:', error));
     </script>
 </body>
 
