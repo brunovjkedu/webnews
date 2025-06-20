@@ -184,9 +184,9 @@ div h2 {
     overflow: hidden;
 }
 
-.card.shadow-sm {
+.card.shadow {
     transition: box-shadow 0.3s ease;
 }
-.card.shadow-sm:hover {
+.card.shadow:hover {
     box-shadow: none !important;
 }
