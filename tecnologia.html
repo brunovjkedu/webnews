@@ -41,7 +41,7 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 py-5">
 
             <div class="col-12 col-md-8 col-lg-6">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card h-100 border-0 shadow-sm" data-destaque-id="0" style="cursor: pointer;">
                     <div class="card-body d-flex flex-column">
                         <h1 class="card-title">'Êta Mundo Melhor!': as primeiras cenas de Lari Manoela
                             como enfermeira com segredo</h5>
@@ -61,7 +61,7 @@
             </div>
 
             <div class="d-none d-md-block col-md-4 col-lg-3 pt-3">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card h-100 border-0 shadow-sm" data-destaque-id="1" style="cursor: pointer;">
                     <img src="imagens/tecnologia_01.jpg" class="card-img-top"
                         alt="Foto generica referente a tecnologia.">
                     <div class="card-body">
@@ -72,7 +72,7 @@
             </div>
 
             <div class="d-none d-lg-block col-lg-3 pt-3">
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card h-100 border-0 shadow-sm" data-destaque-id="2" style="cursor: pointer;">
                     <img src="imagens/tecnologia_01.jpg" class="card-img-top"
                         alt="Foto generica referente a tecnologia.">
                     <div class="card-body">
@@ -84,13 +84,11 @@
         </div>
 
         <!-- Anuncio -->
-        <div class="row g-3 pb-5">
+        <div class="row g-5 pb-5">
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card flex-row align-items-center p-2 border-0 shadow-sm" style="min-height: 100px;">
-                    <img src="imagens/tecnologia_01.jpg" alt="Anuncio 1"
-                        style="width: 100px; height: auto; object-fit: cover;">
-                    <div class="ps-3">
+                <div class="card flex-row align-items-center p-2 border-0 shadow-sm" style="min-height: 100px; cursor: pointer;">
+                       <div class="ps-3">
                         <h6 class="mb-1">Promoção exclusiva</h6>
                         <small>Descontos em eletrônicos até sexta</small>
                     </div>
@@ -98,9 +96,7 @@
             </div>
 
             <div class="d-none d-md-block col-md-6 col-lg-4">
-                <div class="card flex-row align-items-center p-2 border-0 shadow-sm" style="min-height: 100px;">
-                    <img src="imagens/tecnologia_01.jpg" alt="Anuncio 2"
-                        style="width: 100px; height: auto; object-fit: cover;">
+                <div class="card flex-row align-items-center p-2 border-0 shadow-sm" style="min-height: 100px; cursor: pointer;">
                     <div class="ps-3">
                         <h6 class="mb-1">Curso online gratuito</h6>
                         <small>Aprenda programação em 4 semanas</small>
@@ -109,9 +105,9 @@
             </div>
 
             <div class="d-none d-lg-block col-lg-4">
-                <div class="card flex-row align-items-center p-2 border-0 shadow-sm" style="min-height: 100px;">
-                    <img src="imagens/tecnologia_01.jpg" alt="Anuncio 3"
-                        style="width: 100px; height: auto; object-fit: cover;">
+               <div class="card flex-row align-items-center p-2 border-0 shadow-sm" style="min-height: 100px; cursor: pointer;">
+                     <!-- <img src="imagens/tecnologia_01.jpg" alt="Anuncio 3"
+                        style="width: 100px; height: auto; object-fit: cover;"> -->
                     <div class="ps-3">
                         <h6 class="mb-1">Viagens imperdíveis</h6>
                         <small>Passagens aéreas com até 60% off</small>
@@ -137,26 +133,38 @@
             '[data-bs-toggle="tooltip"]'
         );
         tooltipTriggerList.forEach((el) => new bootstrap.Tooltip(el));
-    </script>
-    <script>
+
+        // Aplicar links nos cards de destaque
+        const destaqueCards = document.querySelectorAll('[data-destaque-id]');
+        destaqueCards.forEach(card => {
+            const id = card.getAttribute('data-destaque-id');
+            card.addEventListener('click', () => {
+                window.location.href = `tecnologia-post.html?id=${id}`;
+            });
+        });
+
         // Consumir arquivo de noticias
         fetch('tecnologia.json')
             .then(res => res.json())
             .then(data => {
                 const container = document.getElementById('noticias-container');
+                if (!container) return;
                 container.innerHTML = '';
-                data.forEach(noticia => {
+
+                data.slice(3).forEach((noticia, index) => {
+                    const globalIndex = index + 3;
                     const col = document.createElement('div');
                     col.className = 'col-12 col-md-4 col-lg-3';
-
                     col.innerHTML = `
-                <div class="card h-100 border-0 shadow-sm">
-                    <img src="${noticia.imagem}" class="card-img-top" alt="Imagem da notícia" style="object-fit: cover; height: 200px;">
-                    <div class="card-body">
-                        <h6 class="card-title text-truncate-2">${noticia.titulo}</h6>
-                        <p class="card-text text-truncate-3">${noticia.texto}</p>
+                <a href="tecnologia-post.html?id=${globalIndex}" class="text-decoration-none text-dark">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="${noticia.imagem}" class="card-img-top" alt="Imagem da notícia" style="object-fit: cover; height: 200px;">
+                        <div class="card-body">
+                            <h6 class="card-title text-truncate-2">${noticia.titulo}</h6>
+                            <p class="card-text text-truncate-3">${noticia.texto || ''}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             `;
                     container.appendChild(col);
                 });

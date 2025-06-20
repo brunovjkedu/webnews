@@ -183,3 +183,10 @@ div h2 {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.card.shadow-sm {
+    transition: box-shadow 0.3s ease;
+}
+.card.shadow-sm:hover {
+    box-shadow: none !important;
+}

@@ -1,6 +1,21 @@
 [
   {
     "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "'Êta Mundo Melhor!': as primeiras cenas de Lari Manoela como enfermeira com segredo",
+    "texto": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+    {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "Conta de luz, impostos e mais: os 12 vetos de Lula que Congresso derrubou",
+    "texto": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+    {
+    "imagem": "imagens/tecnologia_01.jpg",
+    "titulo": "River faz jogo seguro, se impõe contra Urawa Reds e inicia Copa com vitória",
+    "texto": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "imagem": "imagens/tecnologia_01.jpg",
     "titulo": "Novidade no mercado tech!",
     "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus vel orci convallis hendrerit.\n\nPraesent eget mauris nec velit laoreet laoreet. Vestibulum dignissim mauris id justo malesuada, et tempor odio dapibus."
   },
