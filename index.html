@@ -37,7 +37,45 @@
 
     <!-- Main -->
     <main class="container container-fluid">
-        <div class="container text-center">
+
+        <div id="carouselExampleIndicators" class="carousel slide py-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-destaque-id="0" style="cursor: pointer;">
+                    <img src="imagens/tecnologia_01.jpg" class="d-block w-100 rounded-3" alt="First slide"
+                        style="max-height: 360px; object-fit: cover;">
+                    <div class="carousel-caption d-block bg-dark bg-opacity-75 shadow rounded-4 p-2">
+                        <h1 class="text-white m-0">Drake afirma ter perdido mais de US$ 8 milhões em apostas esportivas
+                        </h1>
+                    </div>
+                </div>
+                <div class="carousel-item" data-destaque-id="1" style="cursor: pointer;">
+                    <img src="imagens/tecnologia_02.jpg" class="d-block w-100 rounded-3" alt="Second slide"
+                        style="max-height: 360px; object-fit: cover;">
+                    <div class="carousel-caption d-block bg-dark bg-opacity-75 shadow rounded-4 p-2">
+                        <h1 class="text-white m-0">Até R$ 33 mil: o que têm (e não têm) os celulares mais caros do
+                            Brasil</h1>
+                    </div>
+                </div>
+                <div class="carousel-item" data-destaque-id="2" style="cursor: pointer;">
+                    <img src="imagens/tecnologia_03.jpg" class="d-block w-100 rounded-3" alt="Third slide"
+                        style="max-height: 360px; object-fit: cover;">
+                    <div class="carousel-caption d-block bg-dark bg-opacity-75 shadow rounded p-4 p-2">
+                        <h1 class="text-white m-0">Dono do Telegram diz que vai deixar herança para seus mais de 100
+                            filhos</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="container text-center py-5">
             <div class="row">
                 <div class="col-sm-5 col-md-6">
                     <div class="card mb-3" style="max-width: 540px;">
@@ -94,6 +132,15 @@
         // Inicializar tooltips
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el))
+
+        // Aplicar links nos cards de destaque
+        const destaqueCards = document.querySelectorAll('[data-destaque-id]');
+        destaqueCards.forEach(card => {
+            const id = card.getAttribute('data-destaque-id');
+            card.addEventListener('click', () => {
+                window.location.href = `tecnologia-post.html?id=${id}`;
+            });
+        });
     </script>
 
 </body>
